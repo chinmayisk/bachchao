@@ -1,0 +1,14 @@
+application: bachchao
+version: 1
+runtime: python
+api_version: 1
+
+handlers:
+- url: /images
+  static_dir: images/
+
+- url: /src
+  static_dir: src/
+
+- url: /.*
+  script: uploadtest.py
