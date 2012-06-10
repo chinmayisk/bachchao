@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="sosapp.csk.rhok"
+    package="bachchao.app.rhok"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -9,18 +9,15 @@
 	<uses-permission android:name="android.permission.INTERNET" />
 	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 	<uses-permission android:name="android.permission.SEND_SMS">
-	 <uses-permission android:name="android.permission.CAMERA" />
-	 <uses-permission android:name="android.permission.RECORD_AUDIO" />
-	 <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
- 	<uses-feature android:name="android.hardware.camera" />
- 	<uses-feature android:name="android.hardware.camera.autofocus" />
-    
-    </uses-permission>
+	
+	 
+	 
+ 	</uses-permission>
     <application
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name" >
         <activity
-            android:name=".SosappActivity"
+            android:name=".Bachchao1Activity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -29,5 +26,11 @@
             </intent-filter>
         </activity>
     </application>
-
+	<uses-permission android:name="android.permission.CAMERA"/>
+	 <uses-permission android:name="android.permission.RECORD_AUDIO" />
+	 <uses-feature android:name="android.hardware.camera" />
+ 	<uses-feature android:name="android.hardware.camera.autofocus" />
+ 	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+ 	
+	
 </manifest>
