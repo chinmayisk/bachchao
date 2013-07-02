@@ -197,7 +197,7 @@ public class Bachchao1Activity extends Activity implements SurfaceHolder.Callbac
 			protected String doInBackground (String ... urls) { 
 		     String r ="";
 		    HttpClient httpclient = new DefaultHttpClient();
-		    HttpGet httpget = new HttpGet("http://bachchao.appspot.com/pseudoupload");
+		  //  HttpGet httpget = new HttpGet("http://bachchao.appspot.com/pseudoupload");
 		    String uploadUrl;
 		    try{
 			   HttpResponse response = httpclient.execute(httpget);
@@ -305,7 +305,6 @@ public class Bachchao1Activity extends Activity implements SurfaceHolder.Callbac
 				 //working code
 				try {
 					JSONArray jsonArray = new JSONArray(line);
-					Log.d("myapp","helo...");
 					for (int i = 0; i < jsonArray.length(); i++) {
 						JSONObject jsonObject = jsonArray.getJSONObject(i);
 						Log.d("MYAPP", jsonObject.getString("number"));

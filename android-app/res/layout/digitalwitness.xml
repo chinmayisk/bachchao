@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+<SurfaceView
+    android:id="@+id/surfacecamera"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_alignBottom="@+id/buttonstop"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentTop="true" >
+
+</SurfaceView>
+
+<ImageButton
+    android:id="@+id/buttonstop"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentRight="true"
+    android:layout_marginBottom="52dp"
+    android:clickable="true"
+    android:background="@android:color/transparent"
+    android:src="@drawable/stoprecordbutton"/>
+<RelativeLayout 
+    android:id="@+id/textrelative"
+      android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentRight="true"
+    android:layout_below="@+id/surfacecamera"
+    android:background="@drawable/footervideopage"
+    >
+
+<TextView
+    android:id="@+id/textlocation"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:layout_centerVertical="true"
+    android:drawableLeft="@drawable/location_iconv"
+    android:drawablePadding="10dp"
+    android:paddingLeft="5dp"
+    android:textSize="18dp" 
+    android:gravity="center"
+    android:text="Finding Location" />
+
+
+    <Chronometer
+	 android:id="@+id/chronometer"
+     android:format="%s"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+ 	android:layout_alignParentRight="true"
+    android:layout_centerVertical="true"
+    android:layout_marginRight="10dp"
+    android:textSize="18dp" 
+        />
+
+
+</RelativeLayout>
+</RelativeLayout>

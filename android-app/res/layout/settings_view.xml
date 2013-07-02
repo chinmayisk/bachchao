@@ -1,0 +1,186 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    
+<RelativeLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".settingsActivity"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <Button
+        android:id="@+id/contact1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:layout_weight="1.0"
+        android:layout_gravity="fill_vertical"
+        android:gravity="bottom|center"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/savedcontactbox"
+        android:textSize="12dp"
+        android:layout_marginLeft="10dp"
+        android:maxLength="13" />
+
+   
+    <Button
+        android:id="@+id/contact2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignTop="@+id/contact1"
+        android:layout_marginLeft="17dp"
+        android:layout_toRightOf="@+id/contact1"
+        android:background="@drawable/savedcontactbox"
+        android:layout_gravity="fill_vertical"
+        android:gravity="bottom|center"
+        android:textColor="#FFFFFF"
+         android:textSize="12dp"
+        android:hint=" "
+        android:maxLength="13" />
+
+    <Button
+        android:id="@+id/contact3"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignBaseline="@+id/contact2"
+        android:layout_alignBottom="@+id/contact2"
+        android:layout_marginLeft="18dp"
+        android:layout_toRightOf="@+id/contact2"
+        android:background="@drawable/savedcontactbox"
+        android:clickable="true"
+        android:hint=" "
+        android:layout_gravity="fill_vertical"
+        android:gravity="bottom|center"
+        android:textColor="#FFFFFF"
+         android:textSize="12dp"
+        android:maxLength="13" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView4"
+        android:text="@string/updatelocstring" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/contact1"
+        android:drawableLeft="@drawable/location_iconv"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom = "5dp"
+        android:text="LOCATION UPDATE"
+        android:textColor="#512525"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/increasedur"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/locationtabright" />
+
+    <Button
+        android:id="@+id/decreasedur"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/increasedur"
+        android:layout_alignBottom="@+id/increasedur"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/locationtableft" />
+
+    <TextView
+        android:id="@+id/duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/decreasedur"
+        android:layout_toLeftOf="@+id/increasedur"
+        android:background="@drawable/locationtab"
+        android:layout_marginBottom ="10dp"
+        android:gravity="center"
+        android:text="Never"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+        android:drawableLeft="@drawable/contacts"
+        android:gravity="left|center"
+        android:text="CONTACTS"
+        android:textColor="#512525"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/customalertmsg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/customedittext"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="I am in need of help"
+        android:inputType="text|textMultiLine"
+        android:maxLength="160"
+        android:minLines="2"
+        android:textColorHint="#EEEEEE" />
+
+    <EditText
+        android:id="@+id/trackmsg"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/duration"
+        android:background="@drawable/customedittext"
+        android:drawableLeft="@drawable/locationmessage"
+        android:ems="10"
+        android:hint=" I am currently at"
+        android:inputType="text|textMultiLine"
+        android:maxLength="160"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:textColorHint="#EEEEEE" >
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/contact1"
+        android:layout_below="@+id/trackmsg"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/message_icon"
+        android:gravity="center"
+        android:text="CUSTOM MESSAGE"
+        android:textColor="#512525"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
+</ScrollView>

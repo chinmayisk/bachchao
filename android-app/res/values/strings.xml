@@ -1,7 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="hello">Hello World, Bachchao1Activity!</string>
-    <string name="app_name">Bachchao1</string>
+    <string name="app_name">Bachao</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="alert">Help</string>
+    <string name="friends_contacts">Contacts</string>
+    <string name="frcontact">Enter Number</string>
+    <string name="addcontact">Add Contacts</string>
+    <string name="updatelocstring">Update my Location Every</string>
+    <string name="regex_phone">^\\(?\\d{3}[\\)?|-]\\d{3}[- ]\\d{4}((\\s=?)(ext\\.|x)\\d{1,4})?$</string>
+    <string name="onehour">1 Hour</string>
+    <string name="sixhours">6 Hours</string>
+    <string name="daily">Daily</string>
+    <string name="onstartbach">Only when bachchao is started</string>
+    <string name="videostreaming">Video Streaming</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="emailid">Email Id</string>
+    <string name="PhoneNumber">Phone Number</string>
+    <string name="done">Done</string>
 
 </resources>
